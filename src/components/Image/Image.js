@@ -157,11 +157,8 @@ Image.defaultProps = {
   disableSpinner: false,
   disableTransition: false,
   errorIcon: createElement(MdBrokenImage, {
-    style: {
-      width: 48,
-      height: 48,
-      color: '#e0e0e0'
-    }
+    size: 48,
+    color: '#e0e0e0'
   }),
   loading: createElement(CircularProgress, {
     size: 48
