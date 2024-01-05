@@ -1,5 +1,5 @@
 {
-  "name": "@jy95/material-ui-image",
+  "name": "@b3rz3rkr/material-ui-image",
   "version": "4.0.9",
   "description": "Material style image with loading animation",
   "main": "lib/index.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jy95/material-ui-image.git"
+    "url": "git+https://github.com/b3rz3rkr/material-ui-image.git"
   },
   "keywords": [
     "react",
@@ -27,9 +27,9 @@
   "author": "Wertarbyte <kontakt@wertarbyte.com> (https://wertarbyte.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jy95/material-ui-image/issues"
+    "url": "https://github.com/b3rz3rkr/material-ui-image/issues"
   },
-  "homepage": "https://github.com/jy95/material-ui-image#readme",
+  "homepage": "https://github.com/b3rz3rkr/material-ui-image#readme",
   "devDependencies": {
     "@babel/cli": "^7.22.6",
     "@babel/core": "^7.22.8",
@@ -43,10 +43,10 @@
     "webpack": "^5.88.1"
   },
   "peerDependencies": {
-    "@mui/icons-material": "^5.0.0",
     "@mui/material": "^5.0.0",
     "react": "^17.0.0 || ^18.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0"
+    "react-dom": "^17.0.0 || ^18.0.0",
+    "react-icons": "^4.12.0"
   },
   "dependencies": {
     "prop-types": "^15.8.1"

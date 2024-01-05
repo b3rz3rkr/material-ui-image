@@ -1,8 +1,8 @@
-import { Component, createRef, createElement } from 'react'
+import { Component, createElement, createRef } from 'react'
 import PropTypes from 'prop-types'
-import CircularProgress from '@mui/material/CircularProgress';
+import CircularProgress from '@mui/material/CircularProgress'
 import { common } from '@mui/material/colors'
-import BrokenImage from '@mui/icons-material/BrokenImage'
+import MdBrokenImage from 'react-icons'
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -66,7 +66,7 @@ export default class Image extends Component {
         opacity ${animationDuration / 2}ms cubic-bezier(0.4, 0.0, 0.2, 1)`
     }
 
-    const styles = {
+    return {
       root: {
         backgroundColor: color,
         paddingTop: `calc(1 / ${aspectRatio} * 100%)`,
@@ -96,8 +96,6 @@ export default class Image extends Component {
         ...iconContainerStyle
       }
     }
-
-    return styles
   }
 
   handleLoadImage = (e) => {
@@ -158,10 +156,10 @@ Image.defaultProps = {
   disableError: false,
   disableSpinner: false,
   disableTransition: false,
-  errorIcon: createElement(BrokenImage, {
+  errorIcon: createElement(MdBrokenImage, {
     style: {
-      width: 48, 
-      height: 48, 
+      width: 48,
+      height: 48,
       color: '#e0e0e0'
     }
   }),
